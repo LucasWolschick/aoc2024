@@ -22,6 +22,15 @@ defmodule Day01 do
     {listA, listB}
   end
 
+  @doc """
+      iex> Day01.part1("3   4
+      ...>              4   3
+      ...>              2   5
+      ...>              1   3
+      ...>              3   9
+      ...>              3   3")
+      "11"
+  """
   def part1(input) do
     {listA, listB} = lists(input)
 
@@ -33,6 +42,15 @@ defmodule Day01 do
     |> Integer.to_string()
   end
 
+  @doc """
+      iex> Day01.part2("3   4
+      ...>              4   3
+      ...>              2   5
+      ...>              1   3
+      ...>              3   9
+      ...>              3   3")
+      "31"
+  """
   def part2(input) do
     {listA, listB} = lists(input)
 
